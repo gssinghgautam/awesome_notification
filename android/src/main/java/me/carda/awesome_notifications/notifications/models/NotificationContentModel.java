@@ -13,8 +13,12 @@ import me.carda.awesome_notifications.notifications.enumerators.MediaSource;
 import me.carda.awesome_notifications.notifications.enumerators.NotificationCategory;
 import me.carda.awesome_notifications.notifications.enumerators.NotificationLayout;
 import me.carda.awesome_notifications.notifications.enumerators.NotificationLifeCycle;
+import me.carda.awesome_notifications.notifications.enumerators.NotificationLockScreenVisibility;
 import me.carda.awesome_notifications.notifications.enumerators.NotificationPrivacy;
+import me.carda.awesome_notifications.notifications.enumerators.NotificationSound;
 import me.carda.awesome_notifications.notifications.enumerators.NotificationSource;
+import me.carda.awesome_notifications.notifications.enumerators.NotificationWidgetStyle;
+import me.carda.awesome_notifications.notifications.enumerators.NotificationWidgetType;
 import me.carda.awesome_notifications.notifications.exceptions.AwesomeNotificationException;
 import me.carda.awesome_notifications.notifications.managers.ChannelManager;
 import me.carda.awesome_notifications.utils.BitmapUtils;
@@ -37,12 +41,17 @@ public class NotificationContentModel extends AbstractModel {
     public String summary;
     public Boolean showWhen;
     public List<NotificationMessageModel> messages;
+    public List<String> notificationBodyMessages;
     public Map<String, String> payload;
     public String groupKey;
     public String customSound;
     public Boolean playSound;
     public String icon;
     public String largeIcon;
+    public String collapsedIcon;
+    public String expandedIcon;
+    public List<NotificationImageModel> collapsedImages;
+    public List<NotificationImageModel> expandedImages;
     public Boolean locked;
     public String bigPicture;
     public Boolean wakeUpScreen;
@@ -55,14 +64,13 @@ public class NotificationContentModel extends AbstractModel {
     public Long backgroundColor;
     public Integer progress;
     public String ticker;
-
     public NotificationPrivacy privacy;
     public String privateMessage;
-
     public NotificationLayout notificationLayout;
-
-    public NotificationCategory notificationCategory;
-
+    public NotificationWidgetType notificationWidgetType;
+    public NotificationWidgetStyle notificationWidgetStyle;
+    public NotificationSound notificationSound;
+    public NotificationLockScreenVisibility notificationLockScreenVisibility;
     public NotificationSource createdSource;
     public NotificationLifeCycle createdLifeCycle;
     public NotificationLifeCycle displayedLifeCycle;
@@ -125,6 +133,18 @@ public class NotificationContentModel extends AbstractModel {
         notificationLayout =
                 getEnumValueOrDefault(arguments, Definitions.NOTIFICATION_LAYOUT, NotificationLayout.class, NotificationLayout.values());
 
+        notificationLockScreenVisibility =
+                getEnumValueOrDefault(arguments, Definitions.NOTIFICATION_LOCK_SCREEN_VISIBILITY, NotificationLockScreenVisibility.class, NotificationLockScreenVisibility.values());
+
+        notificationSound =
+                getEnumValueOrDefault(arguments, Definitions.NOTIFICATION_SOUND, NotificationSound.class, NotificationSound.values());
+
+        notificationWidgetStyle =
+                    getEnumValueOrDefault(arguments, Definitions.NOTIFICATION_WIDGET_STYLE, NotificationWidgetStyle.class, NotificationWidgetStyle.values());
+
+        notificationWidgetType =
+                getEnumValueOrDefault(arguments, Definitions.NOTIFICATION_WIDGET_TYPE, NotificationWidgetType.class, NotificationWidgetType.values());
+
         privacy =
                 getEnumValueOrDefault(arguments, Definitions.NOTIFICATION_PRIVACY, NotificationPrivacy.class, NotificationPrivacy.values());
 
@@ -134,7 +154,13 @@ public class NotificationContentModel extends AbstractModel {
         privateMessage = getValueOrDefault(arguments, Definitions.NOTIFICATION_PRIVATE_MESSAGE, String.class);
 
         icon  = getValueOrDefault(arguments, Definitions.NOTIFICATION_ICON, String.class);
+
         largeIcon  = getValueOrDefault(arguments, Definitions.NOTIFICATION_LARGE_ICON, String.class);
+
+        expandedIcon  = getValueOrDefault(arguments, Definitions.NOTIFICATION_EXPANDED_ICON, String.class);
+
+        collapsedIcon  = getValueOrDefault(arguments, Definitions.NOTIFICATION_COLLAPSED_ICON, String.class);
+
         bigPicture = getValueOrDefault(arguments, Definitions.NOTIFICATION_BIG_PICTURE, String.class);
 
         payload = getValueOrDefault(arguments, Definitions.NOTIFICATION_PAYLOAD, Map.class);
@@ -149,16 +175,43 @@ public class NotificationContentModel extends AbstractModel {
 
         messages = mapToMessages(getValueOrDefault(arguments, Definitions.NOTIFICATION_MESSAGES, List.class));
 
+        notificationBodyMessages = MapUtils.extractValue(arguments, Definitions.NOTIFICATION_BODY_MESSAGES, List.class).orNull();
+
+        collapsedImages = mapToImages(getValueOrDefault(arguments, Definitions.NOTIFICATION_IMAGE_COLLAPSED_IMAGES, List.class));
+
+        expandedImages = mapToImages(getValueOrDefault(arguments, Definitions.NOTIFICATION_IMAGE_EXPANDED_IMAGES, List.class));
+
+
         roundedLargeIcon = getValueOrDefault(arguments, Definitions.NOTIFICATION_ROUNDED_LARGE_ICON, Boolean.class);
         roundedBigPicture = getValueOrDefault(arguments, Definitions.NOTIFICATION_ROUNDED_BIG_PICTURE, Boolean.class);
 
         return this;
     }
 
+    public static List<NotificationImageModel> mapToImages(List<Map> imageData){
+        List<NotificationImageModel> images = new ArrayList<>();
+        if(!ListUtils.isNullOrEmpty(imageData))
+            for(Map<String, Object> image : imageData){
+                NotificationImageModel imageModel =
+                        new NotificationImageModel().fromMap(image);
+                images.add(imageModel);
+            }
+        return images;
+    }
+
+    public static List<Map> imagesToMap(List<NotificationImageModel> images){
+        List<Map> returnedImages = new ArrayList<>();
+        if(!ListUtils.isNullOrEmpty(images)){
+            for (NotificationImageModel imageModel : images) {
+                returnedImages.add(imageModel.toMap());
+            }
+        }
+        return returnedImages;
+    }
+
     @Override
     public Map<String, Object> toMap(){
         Map<String, Object> returnedObject = new HashMap<>();
-
         returnedObject.put(Definitions.NOTIFICATION_ID, this.id);
         returnedObject.put(Definitions.NOTIFICATION_RANDOM_ID, this.isRandomId);
         returnedObject.put(Definitions.NOTIFICATION_TITLE, this.title);
@@ -182,6 +235,14 @@ public class NotificationContentModel extends AbstractModel {
         returnedObject.put(Definitions.NOTIFICATION_LAYOUT,
                 this.notificationLayout != null ? this.notificationLayout.toString() : "Default");
 
+        returnedObject.put(Definitions.NOTIFICATION_CONFIG_WIDGET_STYLE, this.notificationWidgetStyle !=null ? this.notificationWidgetStyle.toString() : "DEFAULT");
+
+        returnedObject.put(Definitions.NOTIFICATION_CONFIG_WIDGET_TYPE, this.notificationWidgetType !=null ? this.notificationWidgetType.toString() : "DEFAULT");
+
+        returnedObject.put(Definitions.NOTIFICATION_CONFIG_SOUND, this.notificationSound !=null ? this.notificationSound.toString() : "DEFAULT");
+
+        returnedObject.put(Definitions.NOTIFICATION_CONFIG_LOCK_SCREEN_VISIBILITY, this.notificationLockScreenVisibility !=null ? this.notificationLockScreenVisibility.toString() : "VISIBILITY_PUBLIC");
+
         returnedObject.put(Definitions.NOTIFICATION_CREATED_SOURCE,
                 this.createdSource != null ? this.createdSource.toString() : "Local");
 
@@ -192,12 +253,23 @@ public class NotificationContentModel extends AbstractModel {
                 this.displayedLifeCycle != null ? this.displayedLifeCycle.toString() : null);
 
         returnedObject.put(Definitions.NOTIFICATION_DISPLAYED_DATE, this.displayedDate);
+
         returnedObject.put(Definitions.NOTIFICATION_CREATED_DATE, this.createdDate);
 
         returnedObject.put(Definitions.NOTIFICATION_CHANNEL_KEY, this.channelKey);
 
         returnedObject.put(Definitions.NOTIFICATION_ROUNDED_LARGE_ICON, this.roundedLargeIcon);
         returnedObject.put(Definitions.NOTIFICATION_ROUNDED_BIG_PICTURE, this.roundedBigPicture);
+
+        if(notificationBodyMessages!=null)
+            returnedObject.put(Definitions.NOTIFICATION_BODY_MESSAGES, this.notificationBodyMessages);
+
+        if(collapsedImages!=null)
+            returnedObject.put(Definitions.NOTIFICATION_IMAGE_COLLAPSED_IMAGES, imagesToMap(collapsedImages));
+
+        if(expandedImages!=null)
+            returnedObject.put(Definitions.NOTIFICATION_IMAGE_EXPANDED_IMAGES, imagesToMap(expandedImages));
+
 
         if(this.category != null)
             returnedObject.put(Definitions.NOTIFICATION_CATEGORY,
@@ -222,6 +294,12 @@ public class NotificationContentModel extends AbstractModel {
 
         if(this.largeIcon != null)
             returnedObject.put(Definitions.NOTIFICATION_LARGE_ICON, this.largeIcon);
+
+        if(this.expandedIcon != null)
+            returnedObject.put(Definitions.NOTIFICATION_EXPANDED_ICON, this.expandedIcon);
+
+        if(this.collapsedIcon != null)
+            returnedObject.put(Definitions.NOTIFICATION_COLLAPSED_ICON, this.collapsedIcon);
 
         if(this.bigPicture != null)
             returnedObject.put(Definitions.NOTIFICATION_BIG_PICTURE, this.bigPicture);
@@ -301,6 +379,10 @@ public class NotificationContentModel extends AbstractModel {
 
             case Messaging:
                 break;
+
+            case Custom:
+                validateCustom(context);
+            break;
         }
 
         validateLargeIcon(context);
@@ -327,6 +409,10 @@ public class NotificationContentModel extends AbstractModel {
         ){
             throw new AwesomeNotificationException("Invalid big picture '"+bigPicture+"' or large icon '"+largeIcon+"'");
         }
+    }
+
+    private void validateCustom(Context context) throws AwesomeNotificationException{
+
     }
 
     private void validateLargeIcon(Context context) throws AwesomeNotificationException {

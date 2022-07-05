@@ -10,11 +10,11 @@ example/ios/Flutter/.last_build_id
 
 
 doc/api/
-example/android/app/.settings/org.eclipse.buildship.core.prefs
-example/android/app/.project
-example/android/app/.classpath
-example/android/.settings/org.eclipse.buildship.core.prefs
-example/android/.project
+example/android1/app/.settings/org.eclipse.buildship.core.prefs
+example/android1/app/.project
+example/android1/app/.classpath
+example/android1/.settings/org.eclipse.buildship.core.prefs
+example/android1/.project
 android/.settings/org.eclipse.buildship.core.prefs
 android/.project
 android/.classpath

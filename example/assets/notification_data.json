@@ -1,0 +1,77 @@
+{
+  "data": {
+    "title": "Surprise! You have got 500 days to Live",
+    "messages": [
+      "Click here to redeem your Life today."
+    ],
+    "collapsedIcon": "https://www.freepnglogos.com/uploads/marvel-png/marvel-avengers-png-download-transparent-avengers-clipart-png-only-18.png",
+    "expandedIcon": "https://storage.googleapis.com/healofy-open-public/ic_gold_coin.png",
+    "collapsedImages": [
+      {
+        "url": "https://c4.wallpaperflare.com/wallpaper/934/372/893/wonder-woman-gal-gadot-movies-dc-comics-wallpaper-preview.jpg"
+      },
+      {
+        "url": "https://c4.wallpaperflare.com/wallpaper/934/372/893/wonder-woman-gal-gadot-movies-dc-comics-wallpaper-preview.jpg"
+      },
+      {
+        "url": "https://c4.wallpaperflare.com/wallpaper/934/372/893/wonder-woman-gal-gadot-movies-dc-comics-wallpaper-preview.jpg"
+      }
+    ],
+    "expandedImages": [
+      {
+        "url": "https://cdn.vox-cdn.com/thumbor/Y41MhM_hqbVYZ0y_gtXEYZhvAO8=/0x0:1440x2560/1200x0/filters:focal(0x0:1440x2560):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/21693917/Screenshot_20200803_101020.png"
+      },
+      {
+        "url": "https://cdn.vox-cdn.com/thumbor/Y41MhM_hqbVYZ0y_gtXEYZhvAO8=/0x0:1440x2560/1200x0/filters:focal(0x0:1440x2560):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/21693917/Screenshot_20200803_101020.png"
+      },
+      {
+        "url": "https://cdn.vox-cdn.com/thumbor/Y41MhM_hqbVYZ0y_gtXEYZhvAO8=/0x0:1440x2560/1200x0/filters:focal(0x0:1440x2560):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/21693917/Screenshot_20200803_101020.png"
+      },
+      {
+        "url": "https://cdn.vox-cdn.com/thumbor/Y41MhM_hqbVYZ0y_gtXEYZhvAO8=/0x0:1440x2560/1200x0/filters:focal(0x0:1440x2560):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/21693917/Screenshot_20200803_101020.png"
+      }
+    ],
+    "onTapDeeplink": "home/gold_coin",
+    "expandedButtons": [
+      {
+        "label": "Dismiss",
+        "type": "CLICK",
+        "onTapDeeplink": "home/gold_coin"
+      },
+      {
+        "label": "Read Answer",
+        "type": "CLICK",
+        "onTapDeeplink": "home/gold_coin"
+      }
+    ]
+  },
+  "config": {
+    "notificationId": 6713,
+    "channelId": "shop1_silent",
+    "notificationKey": "shop1_silent",
+    "notificationType": "generic",
+    "shouldTriggerNotification": true,
+    "widgetStyle": "BIG_IMAGE",
+    "widgetType": "TWO_IMAGE",
+    "channelName": "shop1_silent",
+    "channelDescription": "shop1_silent",
+    "scheduleTime": 0,
+    "clearOnClick": true,
+    "shouldVibrate": false,
+    "dismissStickyOnClick": true,
+    "isSticky": true,
+    "subjectTimeEnabled": false,
+    "soundEnabled": false,
+    "lockscreenVisibility": "VISIBILITY_PUBLIC",
+    "channelImportance": "IMPORTANCE_HIGH",
+    "showBadge": true,
+    "headsUpEnabled": true,
+    "bypassDnd": false,
+    "shouldRetriggerNotification": false,
+    "imageBackgroundColor": "#FF0000"
+  },
+  "tracking": {
+    "notiSubType": "experiment",
+    "segment": "GC1_silent"
+  }
+}

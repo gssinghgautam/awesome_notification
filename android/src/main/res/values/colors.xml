@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff3278</color>
+    <color name="colorPrimaryDark">#ec3269</color>
+    <color name="colorAccent">#FFAAD4</color>
+    <color name="colorAccentTransparent">#bbfc75b1</color>
+    <color name="ic_launcher_background">#E281A4</color>
+    <color name="background">#F8F8F8</color>
+    <color name="tag_color">#9b9b9b</color>
+    <color name="baby_text">#9b9b9b</color>
+    <color name="question_color">#000000</color>
+    <color name="answer_color">#666666</color>
+    <color name="like_color">#252525</color>
+    <color name="divider_color">#c7c7c7</color>
+    <color name="profile_contact_us">#ffe2eb</color>
+    <color name="profile_green_color">#64cf79</color>
+    <color name="profile_yellow_color">#f7c036</color>
+    <color name="referral_yellow_color">#EFFA05</color>
+    <color name="referral_yellow_color_secondary">#F7FC1A</color>
+    <color name="profile_blue_color">#4b98eb</color>
+    <color name="profile_hint_color">#c7c7c7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_milder">#C8FFFFFF</color>
+    <color name="white_mild">#EEEEEE</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="light_red">#FFBCBC</color>
+    <color name="lighter_red">#FFE8E8</color>
+    <color name="dark_green">#466C16</color>
+    <color name="bottle_green">#075C56</color>
+    <color name="pink">#ff3278</color>
+    <color name="dark_pink">#ec3269</color>
+    <color name="green">#399136</color>
+    <color name="light_green">#97FF91</color>
+    <color name="lighter_green">#D2F7C6</color>
+    <color name="kelly_green">#31C000</color>
+    <color name="light_pink">#FFD3F1</color>
+    <color name="lighter_pink">#FFECF8</color>
+    <color name="translucent_pink">#2bff3278</color>
+    <color name="notification_light_pink">#ff3278</color>
+    <color name="baby_pink">#ffd2e1</color>
+    <color name="tutu">#FFEBEB</color>
+    <color name="grey">#a0a0a0</color>
+    <color name="action_bar_color">#252525</color>
+    <color name="answer_count_color">#5a5a5a</color>
+    <color name="tip_date_color">#bebebe</color>
+    <color name="image_text">#272727</color>
+    <color name="back_color">#88C8EC</color>
+    <color name="comment_hint">#666666</color>
+    <color name="title_text">#5a5a58</color>
+
+    <color name="splash_main">#303030</color>
+    <color name="splash_text1">#808080</color>
+    <color name="splash_text2">#606060</color>
+    <color name="splash_divider">#e9e9e9</color>
+
+    <color name="chat_highlight">#6b88c8ec</color>
+    <color name="amazon_background">#1C95DA</color>
+    <color name="flipkart_background">#1C95DA</color>
+    <color name="dialog_title">#f7f7f7</color>
+    <color name="invite_header">#3A2773</color>
+
+    <color name="tip_name">#DDDF5894</color>
+    <color name="tip_text">#333333</color>
+    <color name="tip_day_count">#969696</color>
+    <color name="tip_green_dark">#d3e7d3</color>
+    <color name="tip_green_light">#ebf4ea</color>
+
+    <color name="border_helpful">#75676A</color>
+    <color name="text_color">#272727</color>
+    <color name="leader_divider">#dfcff0</color>
+    <color name="game_info_back">#f85ca2</color>
+    <color name="game_bg_start">#a6c1ee</color>
+    <color name="game_bg_end">#fbc2eb</color>
+    <color name="game_cards">#f85ca2</color>
+    <color name="answer_back">#fc75b1</color>
+    <color name="answer_select">#3956c1</color>
+    <color name="answer_right">#0bb587</color>
+    <color name="answer_wrong">#f35252</color>
+    <color name="game_eliminate">#f22a3d</color>
+    <color name="game_circle1">#361049</color>
+    <color name="game_circle2">#60255b</color>
+    <color name="game_circle3">#b45e8f</color>
+    <color name="game_circle4">#d478ab</color>
+    <color name="game_circle5">#f5c1d8</color>
+    <color name="game_user_back">#ececec</color>
+    <color name="question_count">#31174e</color>
+    <color name="game_elim_end">#a70917</color>
+    <color name="game_question">#31174e</color>
+    <color name="game_ques_load">#442f38</color>
+    <color name="bg_game_end">#5f225a</color>
+    <color name="eliminate_start">#ef2020</color>
+    <color name="eliminate_end">#a70917</color>
+    <color name="game_live_back">#e84141</color>
+    <color name="back_helpful">#5a5a58</color>
+
+    <color name="bg_feed_chat">#2973b8</color>
+    <color name="bg_feed_date">#ebebeb</color>
+    <color name="feed_date_text">#313131</color>
+    <color name="feed_date_option">#164368</color>
+    <color name="chat_mute_text">#313131</color>
+
+    <color name="bg_live_dark">#888</color>
+    <color name="bg_live_light">#ddd</color>
+    <color name="bg_daily_tip">#f7f7f7</color>
+    <color name="bg_daily_tip_border">#e7e7e7</color>
+    <color name="bg_main_feed">#f5f5f5</color>
+    <color name="feed_game_start">#60255b</color>
+    <color name="feed_game_end">#361049</color>
+    <color name="feed_text">#252525</color>
+    <color name="feed_text_secondary">#505050</color>
+    <color name="feed_follow">#ff3278</color>
+    <color name="feed_unfollow">#45ace6</color>
+    <color name="feed_loader">#cccccc</color>
+    <color name="flipkart_button">#f5d309</color>
+    <color name="flipkart_icon">#27293e</color>
+    <color name="share_title">#323232</color>
+    <color name="leaderboard">#702796</color>
+    <color name="leader_shadow">#b0ffffff</color>
+    <color name="toast_back">#E91E63</color>
+    <color name="channel_tab_normal">#4a4a4a</color>
+    <color name="channel_tab_active">#4a90e2</color>
+    <color name="channel_arrow_back">#40434343</color>
+    <color name="scroll_back">#dddddd</color>
+    <color name="scroll_highlight">#f35252</color>
+
+    <color name="bg_feed_action">#45ace6</color>
+    <color name="chat_divider">#7fb4b4b4</color>
+    <color name="chat_background">#f2f2f2</color>
+    <color name="chat_reply_user">#858585</color>
+    <color name="chat_icon_color">#88c8ec</color>
+    <color name="chat_time_color">#868686</color>
+    <color name="chat_tab_color">#747474</color>
+    <color name="announcement_background">#88c8ec</color>
+    <color name="chat_joined_background">#88c8ec</color>
+    <color name="feed_border">#272727</color>
+    <color name="suggestion_list_item_border">#E4E4E4</color>
+
+    <color name="ask_question_text">#999999</color>
+    <color name="home_tab_normal">#8a41416e</color>
+    <color name="home_tab_select">#000000</color>
+    <color name="hand_select">#464646</color>
+    <color name="language_start">#ff75be</color>
+    <color name="language_end">#ce036e</color>
+    <color name="feed_placeholder">#b8b8b8</color>
+    <color name="language_select">#9a9a9a</color>
+    <color name="blue_button">#88c8ec</color>
+    <color name="view_share">#00bbee</color>
+    <color name="user_group_color">#88c8ec</color>
+    <color name="user_group_normal">#bababa</color>
+
+    <color name="qna_back">#46ace5</color>
+    <color name="qna_button">#ffaad4</color>
+    <color name="qna_wait_border">#95989a</color>
+    <color name="qna_answer_border">#000000</color>
+    <color name="qna_answer_back">#19ba2b</color>
+
+    <color name="title_back">#d8d8d8</color>
+    <color name="text_select_start">#3023ae</color>
+    <color name="text_select_end">#c86dd7</color>
+
+    <color name="hs_next_text">#747474</color>
+    <color name="hs_confirm_text">#676767</color>
+    <color name="hs_scroll_highlight">#888888</color>
+    <color name="hs_scroll_back">#424242</color>
+
+    <color name="horoscope_dark_text_color">#484848</color>
+    <color name="horoscope_light_text_color">#656565</color>
+    <color name="horoscope_header_text_color">#626262</color>
+    <color name="horoscope_header_bg">#efecec</color>
+    <color name="horoscope_semi_dark_text_color">#4a4a4a</color>
+    <color name="horoscope_confirm_widget_bg">#d1d1d1</color>
+
+    <color name="app_language_end">#fba4cb</color>
+    <color name="app_language_back">#4c000000</color>
+
+    <color name="bg_recent_detail">#efefef</color>
+    <color name="title_recent_detail">#757575</color>
+
+    <color name="comment_user_text_color">#919191</color>
+    <color name="game_notification_start">#FF2E2F</color>
+    <color name="game_notification_stop">#EF2453</color>
+    <color name="doctor_notification_start">#5A0B2B</color>
+    <color name="doctor_notification_stop">#BD222A</color>
+    <color name="recent_chat_divider">#707070</color>
+    <color name="item_selector_overlay">#2000bbee</color>
+    <color name="name_suggestion">#FFFF00</color>
+    <color name="color_transparent">#00ffffff</color>
+
+    <color name="color_due_date">#e2006e</color>
+    <color name="back_arrow">@color/pink</color>
+    <color name="feed_action_text">#606060</color>
+    <color name="feed_icons_text">#333333</color>
+    <color name="feed_icons_divider1">#e7e7e7</color>
+    <color name="feed_icons_divider2">#d7d7d7</color>
+    <color name="view_gallery_bg">#80000000</color>
+    <color name="bg_share_facebook">#3b5998</color>
+    <color name="bg_share_instagram_start">#f44336</color>
+    <color name="bg_share_instagram_end">#9c27b0</color>
+
+    <color name="create_post_color">#ff3278</color>
+    <color name="create_post_internal_outline">#e7e7e7</color>
+    <color name="gallery_view_all_border">#e7e7e7</color>
+    <color name="gallery_border">@color/gallery_view_all_border</color>
+    <color name="bg_create_post_text">#f5f5f5</color>
+    <color name="user_info_text">#606060</color>
+    <color name="feed_like_select">#fa5c5c</color>
+    <color name="feed_save_select">#5ba4d5</color>
+    <color name="profile_following">#7454a7</color>
+    <color name="follower_bio">#bdbdbd</color>
+    <color name="disable_invitation_button">#a0a0a0</color>
+    <color name="become_influencer_now">#ff3278</color>
+    <color name="user_type_border">#e7e7e7</color>
+    <color name="user_type_title">#000000</color>
+    <color name="user_type_info">#b2b2b2</color>
+    <color name="user_type_detail">#333333</color>
+    <color name="user_type_normal">#a0a0a0</color>
+    <color name="user_type_select">#ff3278</color>
+    <color name="bg_profile_invite">#ff5d60</color>
+    <color name="influencer_selector_enable">#ff3278</color>
+    <color name="influencer_selector_disable">#d8d8d8</color>
+    <color name="tab_title_select">#000000</color>
+    <color name="tab_title_normal">#888888</color>
+    <color name="user_tag_text">#45ACE6</color>
+    <color name="tip_feed_action_border">#a0a0a0</color>
+
+    <color name="tip_dialog_bg">#FDF3F8</color>
+    <color name="bg_feed_comment">#F2F2F2</color>
+    <color name="referral_info">#f5f5f5</color>
+    <color name="referral_heading">#ffa54a</color>
+    <color name="referral_icon">#7d00ca</color>
+    <color name="brownish_grey">#666666</color>
+    <color name="bg_follow">#f8f8f8</color>
+    <color name="bg_user_action">#f8f8f8</color>
+
+    <color name="language_pink_bg">#80ff3278</color>
+    <color name="language_normal">#c0c0c0</color>
+    <color name="snackbar_error">#e02020</color>
+    <color name="usertype_planning_bg">#f5f5f5</color>
+    <color name="grey_text">#555555</color>
+    <color name="text_black">#303030</color>
+
+    <color name="profileAccent">#ff3278</color>
+    <color name="formError">#ff0000</color>
+    <color name="colorDisabled">#bfbfbf</color>
+    <color name="inputBorder">#d7d7d7</color>
+    <color name="inputBg">#fcfcfc</color>
+
+    <color name="profile_update_cover_camera">#33000000</color>
+    <color name="profile_image_border">#e7e7e7</color>
+    <color name="profile_image_bg">#f5f5f5</color>
+    <color name="profile_name">#333333</color>
+    <color name="user_active_now">#64cf79</color>
+    <color name="profile_bio">#888888</color>
+    <color name="light_gray">#e6e6e6</color>
+    <color name="lighter_gray">#EBEBEB</color>
+    <color name="create_post_meta_text">#808080</color>
+    <color name="gallery_title_breadcrumb">#808080</color>
+
+    <color name="translucent_white_50">#80FFFFFF</color>
+    <color name="translucent_black_25">#40252525</color>
+    <color name="translucent_black_50">#80252525</color>
+    <color name="translucent_black_75">#BF252525</color>
+    <color name="translucent_black_90">#1A252525</color>
+
+    <color name="translucent_white_20">#33FFFFFF</color>
+    <color name="translucent_white_60">#99FFFFFF</color>
+    <color name="translucent_white_25">#40FFFFFF</color>
+
+    <color name="translucent_gray_50">#80E6E6E6</color>
+
+    <color name="accent_daily_tip">#E26E6E</color>
+    <color name="accent_question">#6F7CDC</color>
+    <color name="underline_color">#979797</color>
+    <color name="text_grey">#5c5c5c</color>
+
+    <color name="bg_color_horoscope">#6C55A5</color>
+    <color name="bg_color_baby_game">#C66060</color>
+    <color name="bg_color_daily_tip">#3E7482</color>
+
+    <color name="accent_messenger">#0183ff</color>
+    <color name="accent_whatsapp">#399136</color>
+    <color name="accent_invite">#e26ea2</color>
+    <color name="accent_invite_sub">#282828</color>
+    <color name="accent_grey">#fafafa</color>
+
+    <color name="accent_nudge">#ffb7d0</color>
+    <color name="accent_facebook">#3467ca</color>
+
+    <color name="accent_green_light">#f0fff0</color>
+    <color name="accent_text_share">#363636</color>
+    <color name="accent_lullaby_bg">#B9BABB</color>
+    <color name="accent_lullaby_whatsapp">#87B47E</color>
+
+    <color name="text_light_black">#aa000000</color>
+    <color name="qna_icon_small">#999999</color>
+    <color name="qna_divider">#e7e7e7</color>
+    <color name="accent_online">#6dd400</color>
+
+    <color name="text_color_baby_game_question">#BFEFEBEB</color>
+    <color name="pink_onscreen_button">#EB4979</color>
+    <color name="bg_color_daily_tip_dark">#3A5B66</color>
+    <color name="bg_color_horoscope_dark">#1F1930</color>
+
+    <color name="color_safe_green">#81B17D</color>
+    <color name="ultra_light_pink">#FCEBF1</color>
+    <color name="translucent_ultra_light_pink">#A6FCEBF1</color>
+    <color name="soft_pink">#EC5683</color>
+    <color name="color_invite_bg">#8500FF</color>
+
+    <color name="referral_meteorite_color">#311e75</color>
+    <color name="referral_violet_color">#8a75d6</color>
+    <color name="referral_yellow">#f1f800</color>
+    <color name="invite_gradient_bottom">#fdb900</color>
+    <color name="referral_credit_success">#194181</color>
+    <color name="referral_credit_note">#66194181</color>
+    <color name="invite_searchview_hint">#dcdcdc</color>
+    <color name="invite_max_warning">#ffdee9</color>
+    <color name="purple_blue">#4f31bc</color>
+    <color name="mild_purple">#E3E4FA</color>
+    <color name="lite_purple">#7476E3</color>
+    <color name="ultra_lite_purple">#DDDEFF</color>
+    <color name="bg_contact_search">#66fff1f6</color>
+    <color name="dark_gray_text_color">#4a4a4a</color>
+
+    <!--MyShop colors-->
+    <color name="dark_purple">#966ee3</color>
+    <color name="dark_purple_light">#8a73e3</color>
+    <color name="ultra_light_purple">#198274e3</color>
+    <color name="ultra_light_yellow">#19fa9f45</color>
+    <color name="light_purple_shop">#6f7be3</color>
+    <color name="shop_influencer_bg">#ffecd8</color>
+    <color name="shop_friend_bg">#f2f1fc</color>
+    <color name="bg_shop_help">#30303030</color>
+
+    <color name="order_green">#336DD400</color>
+    <color name="create_post_express_light_green">#e1f0e3</color>
+    <color name="text_color_grey">#333333</color>
+    <color name="order_status_dark_green">#739e47</color>
+    <color name="order_status_light_green">#d8ffaf</color>
+    <color name="order_status_dark_red">#e02020</color>
+    <color name="order_status_light_red">#fce4e4</color>
+    <color name="order_status_dark_orange">#d9000000</color>
+    <color name="order_status_light_orange">#ffe6a0</color>
+    <color name="order_light_pink_nudges">#2effb7d0</color>
+    <color name="background_color_light_blue">#b3defe</color>
+    <color name="background_color_light_pink">#d6c6ec</color>
+    <color name="text_blue">#225f90</color>
+    <color name="bg_empty_address_red">#1AE02020</color>
+    <color name="bg_empty_address_cta_red">#f40505</color>
+
+    <color name="accent_onboarding">#fff9fb</color>
+    <color name="accent_date_info">#32FF3278</color>
+    <color name="accent_strip_header">#ED7099</color>
+
+    <color name="lite_black">#d9000000</color>
+    <color name="lite_orange">#2EF59935</color>
+    <color name="dark_black">#1e1e1e</color>
+    <color name="lite_pink">#2effb7d0</color>
+    <color name="ten_op_lite_orange">#1AF59935</color>
+
+
+    <color name="text_color_brown_grey">#808080</color>
+    <color name="grey_black">#333333</color>
+    <color name="gc_home_tab">#808080</color>
+    <color name="create_post">#606060</color>
+    <color name="gc_invite_btn">#ff3278</color>
+    <color name="gc_invite_bg">#e26ea2</color>
+    <color name="light_yellow">#29F7B500</color>
+    <color name="mall_header_yellow">#FEF8EA</color>
+    <color name="yellow_border">#F7B500</color>
+    <color name="yellow_light">#FFEEBE</color>
+    <color name="gradient_pink_start">#9C3167</color>
+    <color name="gradient_pink_end">#FF4283</color>
+    <color name="gradient_orange_start">#F93D52</color>
+    <color name="gradient_orange_end">#FC6B49</color>
+    <color name="black_sub_text">#1e1e1e</color>
+    <color name="background_passbook_subheader">#FFFAFC</color>
+    <color name="credit_green">#3BC000</color>
+    <color name="deal_light_pink">#ffeaf1</color>
+    <color name="deal_off_green_bg">#ecfaed</color>
+    <color name="fb_blue">#3071ff</color>
+    <color name="slate_blue">#6E78E3</color>
+    <color name="gradient_purple_end">#6E7AE3</color>
+    <color name="gradient_purple_start">#976EE3</color>
+    <color name="lite_gray">#f3f3f3</color>
+
+    <color name="ef_white">#FFFFFF</color>
+    <color name="ef_grey">#22808080</color>
+    <color name="ef_black_alpha_50">#80000000</color>
+    <color name="ef_black_alpha_aa">#AA000000</color>
+    <color name="ef_teal">#009688</color>
+    <color name="extreme_light_gray">#11979797</color>
+    <color name="light_orange">#3df7b500</color>
+    <color name="gradient_blue_start">#2F1491</color>
+    <color name="gradient_blue_end">#4F22EF</color>
+    <color name="border_blue">#E3E3E3</color>
+    <color name="light_purple">#59BABFFF</color>
+    <color name="purplish_blue">#471EDB</color>
+    <color name="background_fb_insta">#2BFF3278</color>
+    <color name="background_purple_selected">#686FDB</color>
+    <color name="background_purpled_unselected">#BBC0FF</color>
+    <color name="background_disabled_light">#24000000</color>
+    <color name="pending_cancelled_gray">#0f000000</color>
+    <color name="background_credit_green">#EBFBE2</color>
+
+    <color name="balance_conversion_back">#fef0ee</color>
+    <color name="balance_conversion_text">#f44c84</color>
+    <color name="balance_conversion_arrow">#fe3379</color>
+    <color name="purple">#8039b4</color>
+    <color name="friends_mentor_dusky">#3df7b500</color>
+    <color name="friends_invite_box_bg">#05000000</color>
+    <color name="announcement_bg">#0dff3278</color>
+    <color name="pink_transparent">#19ff3278</color>
+
+    <color name="pink_60">#99FF3278</color>
+    <color name="pink_30">#53ffb7d0</color>
+
+    <color name="bg_chat_personal_info">#fff7e0</color>
+    <color name="bg_goldcoin_earn_tint">#ff327b</color>
+    <color name="color_mall_tabs_bg">#F5E0C9</color>
+    <color name="tag_bar_bg">#d4effe</color>
+    <color name="chat_join_discussion">#1392dc</color>
+
+    <color name="error_select_size">#FF5050</color>
+    <color name="pdp_mrp_top">#818181</color>
+    <color name="pdp_see_details_border">#e8e8e8</color>
+    <color name="pdp_see_details_bg">#fbebf1</color>
+    <color name="pdp_see_details_text">#e94979</color>
+    <color name="pdp_product_feature_text">#363636</color>
+    <color name="pdp_see_more_start">#80ffffff</color>
+    <color name="pdp_see_more_end">#ffffff</color>
+    <color name="other_product_price_text">#222222</color>
+    <color name="free_shipping_text">#79777A</color>
+
+    <color name="mini_shop_daily_tip">#986FEA</color>
+    <color name="mini_shop_weekly_tip">#d72f85</color>
+
+    <color name="helpful_green">#81B17E</color>
+    <color name="helpful_pink">#EE729B</color>
+    <color name="marked_helpful_green">#93B83E</color>
+    <color name="text_item_count">#191919</color>
+    <color name="content_disapprove">#f00</color>
+
+    <color name="mall_tab_title">#404040</color>
+    <color name="recent_item_title">#3b3b3b</color>
+    <color name="recent_out_of_stock">#d90e0e</color>
+    <color name="bg_mall_banner_cta">#33000000</color>
+
+    <color name="gold_coin_yellow">#F49730</color>
+    <color name="gold_coin_yellow_text">#FCA14B</color>
+
+    <color name="product_border_grey">#d8d8d8</color>
+    <color name="gold_coin_text_green">#43873b</color>
+    <color name="address_purple">#b38bff</color>
+    <color name="payment_purple">#8c63e5</color>
+    <color name="payment_pink">#ff3377</color>
+    <color name="address_selected_bg">#fff8fa</color>
+
+    <color name="shopping_banner_blue">#0032FF</color>
+    <color name="border_gray">#d0d0d0</color>
+
+    <color name="feed_mall_banner_pink">#FC3B7E</color>
+    <color name="feed_mall_banner_ticker_text_bg">#3C8AF4</color>
+    <color name="feed_mall_banner_divider">#E23671</color>
+    <color name="feed_mall_banner_footer_bg">#FC4E8A</color>
+    <color name="feed_mall_banner_cta_bg">#AC1F6D</color>
+    <color name="product_review_purple">#9377ff</color>
+    <color name="ten_op_product_review_purple">#1A9377ff</color>
+    <color name="ten_op_pink">#1AFF3278</color>
+    <color name="gold_coin_color">#f99e42</color>
+    <color name="background_see_review">#F3F3F3</color>
+
+    <color name="lifestage_card_bg_yellow">#fff7e1</color>
+    <color name="fd_yellow">#ffffa9</color>
+    <color name="progress_track_color">#f9d2bf</color>
+    <color name="progress_track_second_color">#f8ab7f</color>
+    <color name="mall_tab_default_border">#efdbca</color>
+    <color name="whatsapp_secondary">#64b161</color>
+    <color name="vote_info_collapsed">#1AFF3278</color>
+    <color name="feed_shop_product_title">#ffedd7</color>
+
+    <color name="text_color_brown">#b05d03</color>
+    <color name="black_tint">#131313</color>
+
+    <color name="bg_spinwheel_gradient_start">#feb765</color>
+    <color name="bg_spinwheel_gradient_center">#fecd5d</color>
+    <color name="bg_spinwheel_gradient_end">#fdeb50</color>
+    <color name="bg_spinwheel_button">#7e69e3</color>
+    <color name="spinwheel_cash">#efb7ff</color>
+    <color name="spinwheel_gold">#e3dbff</color>
+    <color name="spinwheel_luck">#e8f9ff</color>
+    <color name="spinwheel_gold_gradient_start">#fb3b76</color>
+    <color name="spinwheel_gold_gradient_end">#fd6a79</color>
+    <color name="claim_now_button">#6236ff</color>
+    <color name="bg_spinwheel_goldcoin_info">#fc7188</color>
+    <color name="pdp_you_are_saving_green_bg">#e2f5cc</color>
+    <color name="bg_mall_recent_view_all">#26ff3278</color>
+    <color name="overlay_gray">#acacac</color>
+
+    <!--New QnA Colors-->
+    <color name="qna_main_tab_not_selected_title_bg">#FFF9F3</color>
+    <color name="qna_question_text">#303030</color>
+    <color name="qna_answer_text">#303030</color>
+    <color name="qna_user_text">#000000</color>
+    <color name="qna_answer_count_text">#808080</color>
+    <color name="qna_update_text">#808080</color>
+    <color name="qna_update_text_icon">#808080</color>
+    <color name="qna_feed_border">#33000000</color>
+    <color name="qna_cursor">#303030</color>
+    <color name="qna_feed_write_answer">#C0C0C0</color>
+    <color name="qna_strip_action">#D9FFFFFF</color>
+    <color name="soft_blue">#6E7AE3</color>
+
+    <!--New Home Feed-->
+    <color name="home_feed_user_container_desc">#7A7A7A</color>
+    <color name="home_feed_border_new">#3D000000</color>
+    <color name="home_feed_content_divider">#E7E7E7</color>
+
+    <color name="tool_top_icon_active">#FFB6C1</color>
+    <color name="tool_top_icon_normal">#F5F5F5</color>
+    <color name="tool_top_icon_outer_normal">#c0c0c0</color>
+    <color name="tool_top_icon_text">#F5F5F5</color>
+    <color name="tool_text_selected">#ff7c97</color>
+    <color name="tool_top_icon_back">#aa000000</color>
+    <color name="tool_time_normal">#E2DDE4</color>
+    <color name="tool_time_active_start">#FD3479</color>
+    <color name="tool_time_active_end">#717BE2</color>
+    <color name="tool_available_text">#888888</color>
+    <color name="tool_online">#2fbe00</color>
+    <color name="tool_chat_root_border">#e7e7e7</color>
+    <color name="tool_chat_back">#ffffff</color>
+    <color name="tool_chat_timer">#f4fbf2</color>
+    <color name="tool_deal_image_border">#f9cd8c</color>
+    <color name="tool_timer_back_text">#808080</color>
+    <color name="tool_timer_back_deal">#80000000</color>
+    <color name="tool_deal_return_back">#e2f1d2</color>
+    <color name="tool_deal_gc_back">#fbebd2</color>
+    <color name="tool_back">#ff3278</color>
+    <color name="tool_border">#ffc9d9</color>
+    <color name="tool_live">#ff7c97</color>
+    <color name="tool_daily_tip_bg">#fff4f7</color>
+    <color name="bg_qna_tab_normal">#fef9f3</color>
+    <color name="qna_answer_now">#DDDF5894</color>
+    <color name="qna_answer_helpful">#31C000</color>
+
+    <color name="dusk">#d89e00</color>
+    <color name="dusk_dark">#834d19</color>
+    <color name="bg_gradient_commerce_shortcut_start">#ffeedf</color>
+    <color name="bg_gradient_commerce_shortcut_end">#ffe2eb</color>
+    <color name="bg_healofy_academy">#fdf5f8</color>
+
+    <color name="rating_color">#ffa557</color>
+    <color name="pdp_rating_box">#fffae8</color>
+    <color name="commerce_rate_star">#F49730</color>
+    <color name="info_bg_yellow">#fff7e1</color>
+    <color name="progressbar_tint">#838383</color>
+    <color name="feed_info_back">#f5f5f5</color>
+    <color name="feed_sub_detail_text">#808080</color>
+    <color name="bg_explore_entry_yellow">#ffe34d</color>
+
+    <color name="tip_sponsor_heading">#000000</color>
+    <color name="tip_sponsor_title">#bebebe</color>
+    <color name="tool_sponsor_back">#fcf7ff</color>
+    <color name="tool_tip_next_text">#5a3338</color>
+    <color name="tool_tip_next_start">#fdbccf</color>
+    <color name="tool_tip_next_end">#f38891</color>
+
+    <color name="bg_gradient_dailytip_whatsapp_start">#ffeedf</color>
+    <color name="bg_gradient_dailytip_whatsapp_end">#ffe2eb</color>
+    <color name="bg_product_scroller">#66000000</color>
+
+    <color name="fcfs_tool_deal_text_color">#b64b80</color>
+    <color name="fcfs_tool_bg_product_left">#e01e20</color>
+    <color name="fcfs_tool_deal_bg">#ffffff</color>
+    <color name="fcfs_tool_view_product_bg">#ffd7e4</color>
+    <color name="fcfs_tool_deal_timer_bg">#fef6f9</color>
+
+    <color name="bg_mall_header">#ffecce</color>
+    <color name="bg_mall_header_strip">#fedbde</color>
+    <color name="bg_mall_search_border">#ff98bb</color>
+    <color name="bg_mall_category_arrow">#ff3278</color>
+    <color name="bg_mall_category_arrow1">#ffeaf1</color>
+    <color name="bg_mall_category_arrow2">#ededed</color>
+    <color name="bg_mall_category_border">#c8c6c6</color>
+    <color name="bg_mall_header_items">@color/white</color>
+    <color name="mall_header_text">@color/feed_action_text</color>
+    <color name="bg_all_category1">#fafafa</color>
+    <color name="bg_mall_tab_normal">#efe3d8</color>
+    <color name="bg_mall_tab_select">#ffd6e4</color>
+
+    <color name="live_disclaimer_bg">#fff1f1</color>
+    <color name="live_disclaimer_text">#ff6e6e</color>
+    <color name="live_disclaimer_close">#c0c0c0</color>
+
+    <color name="rating_layout_back">#f5ebff</color>
+    <color name="rating_success_back">#ecf3e5</color>
+    <color name="rating_success_text">#4a8f00</color>
+    <color name="rating_start_back">#f7f7f7</color>
+    <color name="rating_feedback_text">#606060</color>
+    <color name="rating_feedback_hint">#a0a0a0</color>
+
+    <color name="button_primary_pink">#ec507c</color>
+    <color name="button_secondary_pink">#fcecf1</color>
+    <color name="badge_color">#ff5353</color>
+
+    <color name="bg_main_title_content">#fff1f4</color>
+    <color name="bg_drawer_profile">#f5f5f5</color>
+    <color name="shop_menu_normal">#a0a0a0</color>
+    <color name="shop_menu_select">#fe5a92</color>
+    <color name="shop_menu_text">#606060</color>
+    <color name="shop_menu_text_profile">#303030</color>
+    <color name="shop_menu_arrow">#d0d0d0</color>
+    <color name="shop_menu_divider">#e7e7e7</color>
+    <color name="bg_user_selection_pink">#ffd5e0</color>
+    <color name="bg_drawer_close">#a0a0a0</color>
+
+    <color name="bg_cart_overlay">#b3000000</color>
+    <color name="bg_home_arrow">#c9000000</color>
+    <color name="bg_rate_review">#f4ebfe</color>
+    <color name="forest_green">#63a51c</color>
+    <color name="cart_divider">#e9e9e9</color>
+    <color name="cart_icon">#a0a0a0</color>
+    <color name="order_meta_text">#606060</color>
+    <color name="order_nudge_green">#E2F6CC</color>
+    <color name="order_nudge_red">#FFEBF1</color>
+    <color name="cart_snackbar_bg">#303030</color>
+    <color name="cart_price_seekbar_bg_color">#fe7b96</color>
+    <color name="cart_price_seekbar_text_color">#B62A51</color>
+    <color name="written_by_expert">#def6e4</color>
+
+    <color name="channel_card_bg_color">#e9e7fe</color>
+    <color name="channel_card_border_color">#c1baff</color>
+    <color name="channel_card_title_color">#635eb1</color>
+    <color name="create_post_bg">#fffcf7</color>
+    <color name="create_post_border">#f8e6cd</color>
+    <color name="create_post_title_color">#e0b376</color>
+    <color name="qna_card_bg_color">#f3f2ff</color>
+    <color name="qna_card_border_color">#cfcaff</color>
+    <color name="qna_card_title_color">#635eb1</color>
+    <color name="profile_suggestion_card_bg_color">#f3fbfe</color>
+    <color name="profile_suggestion_card_border_color">#c8eafa</color>
+    <color name="profile_suggestion_card_title_color">#72c0e5</color>
+    <color name="expert_post_bg">#ffedc5</color>
+    <color name="expert_post_text">#da9526</color>
+    <color name="expert_review_bg">#edfff1</color>
+    <color name="expert_review_text">#299940</color>
+    <color name="similar_mom_post_bg">#ffd6d3</color>
+    <color name="similar_mom_post_text">#e47575</color>
+    <color name="similar_mom_review_bg">#d7d3ff</color>
+    <color name="similar_mom_review_text">#5145c9</color>
+    <color name="feed_banner_bg">#f0f3f6</color>
+    <color name="feed_banner_border">#d3deff</color>
+    <color name="feed_banner_text_color">#5e6d9e</color>
+    <color name="stage_change_card_bg">#fff8ed</color>
+    <color name="stage_change_card_border">#ffd28f</color>
+    <color name="bg_comment_box">#fafafa</color>
+    <color name="bg_comment_box_border">#f2f2f2</color>
+    <color name="comment_hint_color">#8a76777e</color>
+    <color name="commerce_widget_bg_color">#f5f5f5</color>
+    <color name="commerce_widget_border_color">#C89494</color>
+</resources>

@@ -558,7 +558,7 @@ class _HomePageState extends State<HomePage> {
             TextNote('A simple and fast notification to fresh start.\n\n'
                 'Tap on notification when it appears on your system tray to go to Details page.'),
             SimpleButton('Show the most basic notification',
-                onPressed: () => NotificationUtils.showBasicNotification(1)),
+                onPressed: () => NotificationUtils.showCustomNotification()),
             SimpleButton('Show notification with payload',
                 onPressed: () => NotificationUtils.showNotificationWithPayloadContent(1)),
             SimpleButton('Show notification without body content',

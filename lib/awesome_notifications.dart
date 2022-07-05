@@ -10,6 +10,10 @@ export 'src/enumerators/emojis.dart';
 export 'src/enumerators/default_ringtone_type.dart';
 export 'src/enumerators/notification_importance.dart';
 export 'src/enumerators/notification_layout.dart';
+export 'src/enumerators/notification_widget_type.dart';
+export 'src/enumerators/notification_widget_style.dart';
+export 'src/enumerators/notification_sound.dart';
+export 'src/enumerators/notification_lock_screen_visibility.dart';
 export 'src/enumerators/notification_life_cycle.dart';
 export 'src/enumerators/notification_privacy.dart';
 export 'src/enumerators/notification_source.dart';
@@ -33,12 +37,14 @@ export 'src/models/received_models/push_notification.dart';
 export 'src/models/notification_model.dart';
 export 'src/models/received_models/received_action.dart';
 export 'src/models/received_models/received_notification.dart';
+export 'src/models/notification_image_model.dart';
 export 'src/utils/assert_utils.dart';
 export 'src/utils/bitmap_utils.dart';
 export 'src/utils/date_utils.dart';
 export 'src/utils/map_utils.dart';
 export 'src/utils/resource_image_provider.dart';
 export 'src/utils/string_utils.dart';
+export 'src/utils/enum_utils.dart';
 export 'src/definitions.dart';
 
 // Pause and Play vibration sequences

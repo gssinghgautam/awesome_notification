@@ -7,7 +7,7 @@
 /// Example: http(s)://url.com/to/image-asset.png
 /// [MediaSource.File]: images access through files stored on device.
 /// Example: file://path/to/image-asset.png
-/// [MediaSource.Resource]: images access through drawable native resources. On Android, those files are stored inside (project)/android/app/src/main/res folder.
+/// [MediaSource.Resource]: images access through drawable native resources. On Android, those files are stored inside (project)/android1/app/src/main/res folder.
 /// Example: resource://url.com/to/image-asset.png
 enum MediaSource { Resource, Asset, File, Network, Unknown }
 

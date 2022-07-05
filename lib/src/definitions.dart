@@ -131,6 +131,10 @@ const NOTIFICATION_ICON_RESOURCE_ID = 'iconResourceId';
 
 const NOTIFICATION_ID = 'id';
 const NOTIFICATION_LAYOUT = 'notificationLayout';
+const NOTIFICATION_LOCK_SCREEN_VISIBILITY = "notificationLockScreenVisibility";
+const NOTIFICATION_SOUND = "notificationSound";
+const NOTIFICATION_WIDGET_STYLE = "notificationWidgetStyle";
+const NOTIFICATION_WIDGET_TYPE = "notificationWidgetType";
 
 const NOTIFICATION_DISPLAY_ON_FOREGROUND = 'displayOnForeground';
 const NOTIFICATION_DISPLAY_ON_BACKGROUND = 'displayOnBackground';
@@ -182,7 +186,7 @@ const NOTIFICATION_BUTTON_INPUT = 'buttonKeyInput';
 const NOTIFICATION_BUTTON_TYPE = 'buttonType';
 const NOTIFICATION_ENABLED = "enabled";
 const NOTIFICATION_IS_DANGEROUS_OPTION = "isDangerousOption";
-
+const NOTIFICAITON_RESPONSE_MODEL = "notificationResponseModel";
 const NOTIFICATION_PAYLOAD = 'payload';
 const NOTIFICATION_INITIAL_FIXED_DATE = 'fixedDate';
 const NOTIFICATION_INITIAL_DATE_TIME = 'initialDateTime';
@@ -231,6 +235,7 @@ const NOTIFICATION_PERSON = 'person';
 const NOTIFICATION_CONVERSATION_TITLE = 'conversationTitle';
 const NOTIFICATION_GROUP_CONVERSATION = 'groupConversation';
 const NOTIFICATION_MESSAGES = 'messages';
+const NOTIFICATION_BODY_MESSAGES = 'notificationBodyMessages';
 const NOTIFICATION_TEXT = 'text';
 const NOTIFICATION_TIMESTAMP = 'timestamp';
 const NOTIFICATION_BOT = 'bot';
@@ -249,6 +254,53 @@ const NOTIFICATION_TICKER = 'ticker';
 const NOTIFICATION_ALLOW_WHILE_IDLE = 'allowWhileIdle';
 const NOTIFICATION_ROUNDED_LARGE_ICON = 'roundedLargeIcon';
 const NOTIFICATION_ROUNDED_BIG_PICTURE = 'roundedBigPicture';
+
+const NOTIFICATION_RESPONSE_MODEL = "notificationResponseModel";
+//NotificationResponseModel
+const NOTIFICATION_DATA_MODEL = "data";
+const NOTIFICATION_CONFIG_MODEL = "config";
+const NOTIFICATION_TRACKING_MODEL = "tracking";
+
+//NotificationDataModel
+const NOTIFICATION_COLLAPSED_ICON= "collapsedIcon";
+const NOTIFICATION_EXPANDED_ICON= "expandedIcon";
+const NOTIFICATION_IMAGE_COLLAPSED_IMAGES= "collapsedImages";
+const NOTIFICATION_IMAGE_EXPANDED_IMAGES= "expandedImages";
+const NOTIFICATION_DEEP_LINK = "onTapDeeplink";
+const NOTIFICATION_EXPANDED_BUTTONS = "expandedButtons";
+
+//NotificationImageModel
+const NOTIFICATION_IMAGE_URL = "url";
+const NOTIFICATION_IMAGE_DESCRIPTION = "description";
+
+//NotificationConfigModel
+const NOTIFICATION_CONFIG_NOTIFICATION_ID = "notificationId";
+const NOTIFICATION_CONFIG_CHANNEL_ID = "channelId";
+const NOTIFICATION_CONFIG_NOTIFICATION_KEY = "notificationKey";
+const NOTIFICATION_CONFIG_NOTIFICATION_TYPE = "notificationType";
+const NOTIFICATION_CONFIG_SHOULD_TRIGGER_NOTIFICATION= "shouldTriggerNotification";
+const NOTIFICATION_CONFIG_WIDGET_STYLE= "widgetStyle";
+const NOTIFICATION_CONFIG_WIDGET_TYPE= "widgetType";
+const NOTIFICATION_CONFIG_CHANNEL_NAME = "channelName";
+const NOTIFICATION_CONFIG_CHANNEL_DESCRIPTION = "channelDescription";
+const NOTIFICATION_CONFIG_SCHEDULE_TIME= "scheduleTime";
+const NOTIFICATION_CONFIG_CLEAR_ON_CLICK= "clearOnClick";
+const NOTIFICATION_CONFIG_SHOULD_VIBRATE= "shouldVibrate";
+const NOTIFICATION_CONFIG_DISMISS_STICKY_ON_CLICK= "dismissStickyOnClick";
+const NOTIFICATION_CONFIG_IS_STICKY = "isSticky";
+const NOTIFICATION_CONFIG_SUBJECT_TIME_ENABLED = "subjectTimeEnabled";
+const NOTIFICATION_CONFIG_LOCK_SCREEN_VISIBILITY = "lockscreenVisibility";
+const NOTIFICATION_CONFIG_CHANNEL_IMPORTANCE = "channelImportance";
+const NOTIFICATION_CONFIG_SHOW_BADGE = "showBadge";
+const NOTIFICATION_CONFIG_HEADS_UP_ENABLED = "headsUpEnabled";
+const NOTIFICATION_CONFIG_BYPASS_DND = "bypassDnd";
+const NOTIFICATION_CONFIG_SHOULD_RETRIGGER_NOTIFICATION = "shouldRetriggerNotification";
+const NOTIFICATION_CONFIG_IMAGE_BACKGROUND_COLOR = "imageBackgroundColor";
+const NOTIFICATION_CONFIG_SOUND_ENABLED = "soundEnabled";
+
+//NotificationTrackingModel
+const NOTIFICATION_TRACKING_NOTI_SUB_TYPE= "notiSubType";
+const NOTIFICATION_TRACKING_SEGMENT= "segment";
 
 class Definitions {
   static Map<String, Object?> initialValues = {

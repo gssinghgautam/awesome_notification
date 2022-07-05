@@ -1,0 +1,13 @@
+<resources xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="NotificationAction">
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:layout_marginRight">@dimen/dp_32</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/notification_light_pink</item>
+        <item name="android:textSize">@dimen/feed_meta_textsize1</item>
+        <item name="android:paddingTop">@dimen/padding_medium</item>
+    </style>
+
+</resources>

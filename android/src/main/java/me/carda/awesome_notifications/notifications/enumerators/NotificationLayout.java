@@ -9,6 +9,7 @@ public enum NotificationLayout {
     Messaging,
     MessagingGroup,
     MediaPlayer,
-    PhoneCall
+    PhoneCall,
+    Custom
 }
 

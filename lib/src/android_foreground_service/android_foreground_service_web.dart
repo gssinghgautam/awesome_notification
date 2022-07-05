@@ -23,7 +23,7 @@ class AndroidForegroundService {
   /// will be invoked , else  [`Service.startForeground(int id, Notification notification)`](https://developer.android.com/reference/android/app/Service#startForeground(int,%20android.app.Notification)) is used.
   /// On devices older than [`Build.VERSION_CODES.Q`](https://developer.android.com/reference/android/os/Build.VERSION_CODES#Q), `foregroundServiceType` will be ignored.
   /// Multiple type flags can be ORed together (using the `|` operator).
-  /// Note that `foregroundServiceType` must be a subset of the `android:foregroundServiceType` defined in your `AndroidManifest.xml`!
+  /// Note that `foregroundServiceType` must be a subset of the `android1:foregroundServiceType` defined in your `AndroidManifest.xml`!
   ///
   /// On any platform other than Android, this is a no-op and does nothing, so it is safe to call it without a platform check.
   static Future<void> startForeground(

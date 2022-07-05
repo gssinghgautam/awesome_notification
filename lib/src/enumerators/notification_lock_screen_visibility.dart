@@ -1,0 +1,5 @@
+enum NotificationLockScreenVisibility{
+  VISIBILITY_PUBLIC,
+  VISIBILITY_PRIVATE,
+  VISIBILITY_SECRET
+}

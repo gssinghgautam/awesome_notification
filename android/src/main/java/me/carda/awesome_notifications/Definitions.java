@@ -148,6 +148,10 @@ public interface Definitions {
     String NOTIFICATION_ID = "id";
     String NOTIFICATION_RANDOM_ID = "randomId";
     String NOTIFICATION_LAYOUT = "notificationLayout";
+    String NOTIFICATION_LOCK_SCREEN_VISIBILITY = "notificationLockScreenVisibility";
+    String NOTIFICATION_SOUND = "notificationSound";
+    String NOTIFICATION_WIDGET_STYLE = "notificationWidgetStyle";
+    String NOTIFICATION_WIDGET_TYPE = "notificationWidgetType";
     String NOTIFICATION_TITLE = "title";
     String NOTIFICATION_BODY = "body";
     String NOTIFICATION_TIMESTAMP = "timestamp";
@@ -158,6 +162,10 @@ public interface Definitions {
     String NOTIFICATION_JSON = "notificationJson";
 
     String NOTIFICATION_MESSAGES = "messages";
+    String NOTIFICATION_BODY_MESSAGES = "notificationBodyMessages";
+
+    String NOTIFICATION_RESPONSE_MODEL = "notificationResponseModel";
+
     String NOTIFICATION_BUTTON_KEY = "key";
     String NOTIFICATION_BUTTON_ICON = "icon";
     String NOTIFICATION_BUTTON_LABEL = "label";
@@ -221,6 +229,55 @@ public interface Definitions {
     String NOTIFICATION_LED_OFF_MS = "ledOffMs";
     String NOTIFICATION_TICKER = "ticker";
     String NOTIFICATION_ALLOW_WHILE_IDLE = "allowWhileIdle";
+
+    //NotificationResponseModel
+    String NOTIFICATION_DATA_MODEL = "data";
+    String NOTIFICATION_CONFIG_MODEL = "config";
+    String NOTIFICATION_TRACKING_MODEL = "tracking";
+
+    //NotificationDataModel
+    String NOTIFICATION_COLLAPSED_ICON= "collapsedIcon";
+    String NOTIFICATION_EXPANDED_ICON= "expandedIcon";
+    String NOTIFICATION_IMAGE_COLLAPSED_IMAGES= "collapsedImages";
+    String NOTIFICATION_IMAGE_EXPANDED_IMAGES= "expandedImages";
+    String NOTIFICATION_DEEP_LINK = "onTapDeeplink";
+    String NOTIFICATION_EXPANDED_BUTTONS = "expandedButtons";
+
+    //NotificationImageModel
+    String NOTIFICATION_IMAGE_URL = "url";
+    String NOTIFICATION_IMAGE_DESCRIPTION = "description";
+
+    //NotificationConfigModel
+    String NOTIFICATION_CONFIG_NOTIFICATION_ID = "notificationId";
+    String NOTIFICATION_CONFIG_CHANNEL_ID = "channelId";
+    String NOTIFICATION_CONFIG_NOTIFICATION_KEY = "notificationKey";
+    String NOTIFICATION_CONFIG_NOTIFICATION_TYPE = "notificationType";
+    String NOTIFICATION_CONFIG_SHOULD_TRIGGER_NOTIFICATION= "shouldTriggerNotification";
+    String NOTIFICATION_CONFIG_WIDGET_STYLE= "widgetStyle";
+    String NOTIFICATION_CONFIG_WIDGET_TYPE= "widgetType";
+    String NOTIFICATION_CONFIG_CHANNEL_NAME = "channelName";
+    String NOTIFICATION_CONFIG_CHANNEL_DESCRIPTION = "channelDescription";
+    String NOTIFICATION_CONFIG_SCHEDULE_TIME= "scheduleTime";
+    String NOTIFICATION_CONFIG_CLEAR_ON_CLICK= "clearOnClick";
+    String NOTIFICATION_CONFIG_SHOULD_VIBRATE= "shouldVibrate";
+    String NOTIFICATION_CONFIG_DISMISS_STICKY_ON_CLICK= "dismissStickyOnClick";
+    String NOTIFICATION_CONFIG_IS_STICKY = "isSticky";
+    String NOTIFICATION_CONFIG_SUBJECT_TIME_ENABLED = "subjectTimeEnabled";
+    String NOTIFICATION_CONFIG_LOCK_SCREEN_VISIBILITY = "lockscreenVisibility";
+    String NOTIFICATION_CONFIG_SOUND = "sound";
+    String NOTIFICATION_CONFIG_CHANNEL_IMPORTANCE = "channelImportance";
+    String NOTIFICATION_CONFIG_SHOW_BADGE = "showBadge";
+    String NOTIFICATION_CONFIG_HEADS_UP_ENABLED = "headsUpEnabled";
+    String NOTIFICATION_CONFIG_BYPASS_DND = "bypassDnd";
+    String NOTIFICATION_CONFIG_SHOULD_RETRIGGER_NOTIFICATION = "shouldRetriggerNotification";
+    String NOTIFICATION_CONFIG_IMAGE_BACKGROUND_COLOR = "imageBackgroundColor";
+    String NOTIFICATION_CONFIG_SOUND_ENABLED = "soundEnabled";
+
+
+
+    //NotificationTrackingModel
+    String NOTIFICATION_TRACKING_NOTI_SUB_TYPE= "notiSubType";
+    String NOTIFICATION_TRACKING_SEGMENT= "segment";
 
     Map<String, Object> initialValues = new HashMap<String, Object>(){{
         put(Definitions.FIREBASE_ENABLED, true);
