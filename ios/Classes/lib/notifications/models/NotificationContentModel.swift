@@ -7,6 +7,9 @@
 
 import Foundation
 
+//   final String? title;
+
+
 public class NotificationContentModel : AbstractModel {
 
     var id: Int?
@@ -49,6 +52,17 @@ public class NotificationContentModel : AbstractModel {
     var displayedLifeCycle: NotificationLifeCycle?
     var createdDate: String?
     var displayedDate: String?
+    var onTapDeeplink: String?
+    
+    var notificationBodyMessages: [String]?
+    var collapsedIcon: String?
+    var expandedIcon: String?
+    var collapsedImages: [NotificationImageModel]?
+    var expandedImages: [NotificationImageModel]?
+    var notificationWidgetType: NotificationWidgetType?
+    var notificationWidgetStyle: NotificationWidgetStyle?
+    var notificationSound: NotificationSound?
+    var notificationLockScreenVisibility: NotificationLockScreenVisibility?
     
     public func fromMap(arguments: [String : Any?]?) -> AbstractModel? {
                 
@@ -97,6 +111,20 @@ public class NotificationContentModel : AbstractModel {
         
         self.payload  = MapUtils<[String:String?]>.getValueOrDefault(reference: Definitions.NOTIFICATION_PAYLOAD, arguments: arguments)
         
+        self.notificationLockScreenVisibility            = EnumUtils<NotificationLockScreenVisibility>.getEnumOrDefault(reference: Definitions.NOTIFICATION_LOCK_SCREEN_VISIBILITY, arguments: arguments)
+        self.notificationSound = EnumUtils<NotificationSound>.getEnumOrDefault(reference: Definitions.NOTIFICATION_SOUND, arguments: arguments)
+        self.notificationWidgetStyle = EnumUtils<NotificationWidgetStyle>.getEnumOrDefault(reference: Definitions.NOTIFICATION_WIDGET_STYLE, arguments: arguments)
+        self.notificationWidgetType = EnumUtils<NotificationWidgetType>.getEnumOrDefault(reference: Definitions.NOTIFICATION_WIDGET_TYPE, arguments: arguments)
+        
+        self.expandedIcon     = MapUtils<String>.getValueOrDefault(reference: Definitions.NOTIFICATION_EXPANDED_ICON, arguments: arguments)
+
+        self.collapsedIcon     = MapUtils<String>.getValueOrDefault(reference: Definitions.NOTIFICATION_COLLAPSED_ICON, arguments: arguments)
+
+        self.notificationBodyMessages = MapUtils<[String]>.getValueOrDefault(reference: Definitions.NOTIFICATION_BODY_MESSAGES, arguments: arguments)
+        
+        self.collapsedImages = MapUtils<[NotificationImageModel]>.getValueOrDefault(reference: Definitions.NOTIFICATION_IMAGE_COLLAPSED_IMAGES, arguments: arguments)
+        self.expandedImages = MapUtils<[NotificationImageModel]>.getValueOrDefault(reference: Definitions.NOTIFICATION_IMAGE_EXPANDED_IMAGES, arguments: arguments)
+
         return self
     }
     
@@ -136,6 +164,25 @@ public class NotificationContentModel : AbstractModel {
         if(self.createdDate != nil){ mapData[Definitions.NOTIFICATION_CREATED_DATE] = self.createdDate }
         if(self.displayedDate != nil){ mapData[Definitions.NOTIFICATION_DISPLAYED_DATE] = self.displayedDate }
         if(self.payload != nil){ mapData[Definitions.NOTIFICATION_PAYLOAD] = self.payload }
+
+        
+        mapData[Definitions.NOTIFICATION_LOCK_SCREEN_VISIBILITY] = self.notificationLockScreenVisibility ?? .VisibilityPublic
+        mapData[Definitions.NOTIFICATION_SOUND] = self.notificationSound ?? .Default
+        mapData[Definitions.NOTIFICATION_WIDGET_STYLE] = self.notificationWidgetStyle ?? .Default
+        mapData[Definitions.NOTIFICATION_WIDGET_TYPE] = self.notificationWidgetType ?? .Default
+
+        
+        if(self.expandedIcon != nil){ mapData[Definitions.NOTIFICATION_EXPANDED_ICON] = self.expandedIcon }
+
+        if(self.collapsedIcon != nil){ mapData[Definitions.NOTIFICATION_COLLAPSED_ICON] = self.collapsedIcon }
+
+        if(self.notificationBodyMessages != nil){ mapData[Definitions.NOTIFICATION_BODY_MESSAGES] = self.notificationBodyMessages }
+
+
+        if(self.collapsedImages != nil){ mapData[Definitions.NOTIFICATION_IMAGE_COLLAPSED_IMAGES] = self.collapsedImages }
+
+
+        if(self.expandedImages != nil){ mapData[Definitions.NOTIFICATION_IMAGE_EXPANDED_IMAGES] = self.expandedImages }
 
         return mapData
     }
@@ -196,13 +243,19 @@ public class NotificationContentModel : AbstractModel {
                 
             case .Messaging:
                 break
-                
+        case .Custom:
+            try validate()
+            break
             default:
                 notificationLayout = NotificationLayout.Default
                 break
         }
     }
     
+    private func validateCustom() throws {
+
+    }
+
     private func validateBigPicture() throws {
         if(bigPicture != nil && !BitmapUtils.isValidBitmap(bigPicture)){
             throw AwesomeNotificationsException.invalidRequiredFields(msg: "invalid bigPicture")

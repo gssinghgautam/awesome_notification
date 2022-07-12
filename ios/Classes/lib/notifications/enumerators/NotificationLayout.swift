@@ -8,7 +8,7 @@ enum NotificationLayout : String, CaseIterable {
   case Messaging = "Messaging"
   case MessagingGroup = "MessagingGroup"
   case MediaPlayer = "MediaPlayer"
-  
+  case Custom = "Custom"
 }
 
 // pascualoto cnpj  - recovery grupo - Guilerme 0800-772-3331

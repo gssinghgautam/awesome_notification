@@ -193,6 +193,24 @@ enum Definitions {
     static let  NOTIFICATION_ROUNDED_LARGE_ICON = "roundedLargeIcon"
     static let  NOTIFICATION_ROUNDED_BIG_PICTURE = "roundedBigPicture"
 
+    //NotificationDataModel
+    static let NOTIFICATION_LOCK_SCREEN_VISIBILITY = "notificationLockScreenVisibility"
+    static let NOTIFICATION_SOUND = "notificationSound"
+    static let NOTIFICATION_WIDGET_STYLE = "notificationWidgetStyle"
+    static let NOTIFICATION_WIDGET_TYPE = "notificationWidgetType"
+    static let NOTIFICATION_BODY_MESSAGES = "notificationBodyMessages"
+
+    static let NOTIFICATION_COLLAPSED_ICON = "collapsedIcon"
+    static let NOTIFICATION_EXPANDED_ICON = "expandedIcon"
+    static let NOTIFICATION_IMAGE_COLLAPSED_IMAGES = "collapsedImages"
+    static let NOTIFICATION_IMAGE_EXPANDED_IMAGES = "expandedImages"
+    static let NOTIFICATION_DEEP_LINK = "onTapDeeplink"
+    static let NOTIFICATION_EXPANDED_BUTTONS = "expandedButtons"
+     
+    //NotificationImageModel
+    static let NOTIFICATION_IMAGE_URL = "url"
+    static let NOTIFICATION_IMAGE_DESCRIPTION = "description"
+
     static let  initialValues = [
         Definitions.NOTIFICATION_ID: 0,
         Definitions.NOTIFICATION_SCHEDULE_REPEATS: false,
@@ -232,6 +250,12 @@ enum Definitions {
         Definitions.NOTIFICATION_IS_DANGEROUS_OPTION: false,
         Definitions.NOTIFICATION_WAKE_UP_SCREEN: false,
         Definitions.NOTIFICATION_ROUNDED_LARGE_ICON: false,
-        Definitions.NOTIFICATION_ROUNDED_BIG_PICTURE: false
+        Definitions.NOTIFICATION_ROUNDED_BIG_PICTURE: false,
+        Definitions.NOTIFICATION_COLLAPSED_ICON: nil,
+        Definitions.NOTIFICATION_EXPANDED_ICON: nil,
+        Definitions.NOTIFICATION_IMAGE_COLLAPSED_IMAGES: nil,
+        Definitions.NOTIFICATION_IMAGE_EXPANDED_IMAGES: nil,
+        Definitions.NOTIFICATION_DEEP_LINK: nil,
+        Definitions.NOTIFICATION_EXPANDED_BUTTONS: nil,
     ] as [String : Any?]
 }
