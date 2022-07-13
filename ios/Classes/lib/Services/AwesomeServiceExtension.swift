@@ -79,6 +79,20 @@ open class AwesomeServiceExtension: UNNotificationServiceExtension {
                 //contentHandler(content)
                 //return
                 
+                if let notificationWidgetType = notificationModel?.content?.notificationWidgetType {
+                    switch notificationWidgetType {
+                    case .TwoImage:
+                        content.categoryIdentifier = "TwoImageIdentifier"
+                    case .Order:
+                        content.categoryIdentifier = "OrderIdentifier"
+                    case .Chat:
+                        content.categoryIdentifier = "ChatIdentifier"
+                    default:
+                        content.categoryIdentifier = Definitions.DEFAULT_CATEGORY_IDENTIFIER
+                        return
+                    }
+                }
+                
                 if let notificationModel = notificationModel {
                     do {
                         try NotificationSenderAndScheduler().send(

@@ -526,7 +526,9 @@ public class NotificationBuilder {
             case .Default:
                 setDefaultLayout(notificationModel: notificationModel, content: content)
                 return
-            
+            case .Custom:
+            setCustomLayout(notificationModel: notificationModel, content: content)
+            return
             default:
                 setDefaultLayout(notificationModel: notificationModel, content: content)
                 return
@@ -620,4 +622,34 @@ public class NotificationBuilder {
         content.categoryIdentifier = "Default"
     }
     
+    private static func setCustomLayout(notificationModel:NotificationModel, content:UNMutableNotificationContent) {
+                
+        if let notificationWidgetType = notificationModel.content?.notificationWidgetType {
+            switch notificationWidgetType {
+            case .TwoImage:
+                content.categoryIdentifier = "TwoImageIdentifier"
+            case .Order:
+                content.categoryIdentifier = "OrderIdentifier"
+            case .Chat:
+                content.categoryIdentifier = "ChatIdentifier"
+            default:
+                content.categoryIdentifier = Definitions.DEFAULT_CATEGORY_IDENTIFIER
+                return
+            }
+        }
+        
+        
+//        if(!StringUtils.isNullOrEmpty(notificationModel.content?.expandedIcon)) {
+//            if let attachment:UNNotificationAttachment =
+//                getAttatchmentFromBitmapSource(
+//                    notificationModel.content?.bigPicture,
+//                    rounded: false) {
+//                content.attachments.append(attachment)
+//                return
+//            }
+//        }
+//        if let notificationWidgetType = notificationModel.content?.notificationWidgetType {
+//
+//        }
+    }
 }
